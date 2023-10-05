@@ -136,7 +136,6 @@ echo " 01. Return To Main Menu"
 echo "02. Exit"
 echo
 read -p $'  >>  \en' mainorexit2
-read -p $'  \e[1;31m>>\e[0m\e[1;96m  \en' mainorexit2
 
 if [[ $mainorexit2 == 1 || $mainorexit2 == 01 ]]; then
 menu
