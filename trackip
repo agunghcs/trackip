@@ -19,7 +19,6 @@ exit 1
 else
 echo "Invalid option "
 sleep 1
-banner
 menu
 fi
 
@@ -43,7 +42,6 @@ mycurrency=$(echo $myipaddripapico | grep -Po '(?<="currency":)[^},]*' | tr -d '
 mylanguage=$(echo $myipaddripapico | grep -Po '(?<="languages":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 mycalling=$(echo $myipaddripapico | grep -Po '(?<="country_calling_code":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 
-banner
 echo
 echo 
 echo " Ip Address    :   $myip"
@@ -72,7 +70,6 @@ echo
 read -p $'  >> \en' mainorexit1
 
 if [[ $mainorexit1 == 1 || $mainorexit1 == 01 ]]; then
-banner
 menu
 elif [[ $mainorexit1 == 2 || $mainorexit1 == 02 ]]; then
 printf "\e[0m\n"
@@ -82,7 +79,6 @@ exit 1
 else
 printf "Invalid option"
 sleep 1
-banner
 menu
 fi
 
@@ -147,7 +143,6 @@ exit 1
 else
 printf "Invalid option"
 sleep 1
-banner
 menu
 fi
 
