@@ -44,24 +44,24 @@ mycalling=$(echo $myipaddripapico | grep -Po '(?<="country_calling_code":)[^},]*
 
 echo
 echo 
-echo " Ip Address    :   $myip"
-echo " City          :   $mycity"
-echo " Region        :   $myregion"
-echo " Country       :   $mycountry"
-echo " Latitude      :   $mylat"
-echo " Longitude     :   $mylon"
+echo "Ip Address    :$myip"
+echo "City          :$mycity"
+echo "Region        :$myregion"
+echo "Country       :$mycountry"
+echo "Latitude      :$mylat"
+echo "Longitude     :$mylon"
 echo
-echo " Time Zone     :   $mytime"
-echo " Postal Code   :   $mypostal"
-echo " ISP           :   $myisp"
-echo " ASN           :   $myasn"
+echo "Time Zone     :$mytime"
+echo "Postal Code   :$mypostal"
+echo "ISP           :$myisp"
+echo "ASN           :$myasn"
 echo
-echo " Country Code  :   $mycountrycode"
-echo " Currency      :   $mycurrency"
-echo " Languages     :   $mylanguage"
-echo " Calling Code  :   $mycalling"
+echo "Country Code  :$mycountrycode"
+echo "Currency      :$mycurrency"
+echo "Languages     :$mylanguage"
+echo "Calling Code  :$mycalling"
 echo
-echo " GOOGLE Maps   :   https://maps.google.com/?q=$mylat,$mylon"
+echo "GOOGLE Maps   :https://maps.google.com/?q=$mylat,$mylon"
 sleep 5
 echo
 echo "  01. Return To Main Menu"
@@ -107,25 +107,25 @@ userlanguage=$(echo $ipaddripapico | grep -Po '(?<="languages":)[^},]*' | tr -d 
 usercalling=$(echo $ipaddripapico | grep -Po '(?<="country_calling_code":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 
 echo
-echo " Ip Address    :   $userip"
-echo " City          :   $usercity"
-echo " Region        :   $useregion"
-echo " Country       :   $usercountry"
+echo "Ip Address    :$userip"
+echo "City          :$usercity"
+echo "Region        :$useregion"
+echo "Country       :$usercountry"
 echo
-echo " Latitude      :   $userlat"
-echo " Longitude     :   $userlon"
-echo " Time Zone     :   $usertime"
-echo " Postal Code   :   $userpostal"
+echo "Latitude      :$userlat"
+echo "Longitude     :$userlon"
+echo "Time Zone     :$usertime"
+echo "Postal Code   :$userpostal"
 echo
-echo " ISP           :   $userisp"
-echo " ASN           :   $userasn"
+echo "ISP           :$userisp"
+echo "ASN           :$userasn"
 echo
-echo " Country Code  :   $usercountrycode"
-echo " Currency      :   $usercurrency"
-echo " Languages     :   $userlanguage"
-echo " Calling Code  :   $usercalling"
+echo "Country Code  :$usercountrycode"
+echo "Currency      :$usercurrency"
+echo "Languages     :$userlanguage"
+echo "Calling Code  :$usercalling"
 echo
-echo " GOOGLE Maps   :   https://maps.google.com/?q=$userlat,$userlon"
+echo "GOOGLE Maps   :https://maps.google.com/?q=$userlat,$userlon"
 sleep 5
 echo 
 echo " 01. Return To Main Menu"
